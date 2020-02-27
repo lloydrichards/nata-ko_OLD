@@ -1,35 +1,29 @@
 .App {
 }
 body {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
+}
+
+.nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav {
-  position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
+  padding: 0 75px;
+  width: 100%;
+  height: 75px;
 }
 
-.background {
+.about-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  background: #fff;
+  right: 25px;
+  top: 25px;
+  width: 212px;
+}
+.menu-background {
+  position: absolute;
+  right: 25px;
+  top: 25px;
 }
 
-button {
+button.About {
   outline: none;
   border: none;
   -webkit-user-select: none;
@@ -38,7 +32,23 @@ button {
   cursor: pointer;
   position: absolute;
   top: 18px;
-  left: 15px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+button.Menu {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 70px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -51,19 +61,33 @@ li {
   padding: 0;
 }
 
-ul {
-  padding: 25px;
-  position: absolute;
-  top: 100px;
-  width: 230px;
-}
-
 li {
   list-style: none;
-  margin-bottom: 20px;
-  display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+ul.menu-item {
+  list-style-type: none;
+  padding-top: 30px;
+  padding-bottom: auto;
+  padding-right: 75px;
+  margin-right: 120px;
+  overflow: hidden;
+}
+
+li.menu-item {
+  float: right;
+}
+
+li.menu-item a {
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+.nav-button {
+  display: inline-block;
 }
 
 .icon-placeholder {
@@ -75,10 +99,18 @@ li {
 }
 
 .text-placeholder {
+  text-align: center;
   border-radius: 5px;
   width: 200px;
   height: 20px;
   flex: 1;
+}
+text-placeholder-link {
+  text-align: center;
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 2;
 }
 
 .refresh {
