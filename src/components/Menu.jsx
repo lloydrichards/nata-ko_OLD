@@ -12,6 +12,7 @@ const variants = {
 
 const childVariants = {
   open: {
+    display: 'inline',
     x: 0,
     opacity: 1,
     transition: {
@@ -19,6 +20,7 @@ const childVariants = {
     }
   },
   closed: {
+    display: 'none',
     x: 50,
     opacity: 0,
     transition: {
@@ -29,11 +31,10 @@ const childVariants = {
 
 export const Menu = () => (
   <motion.ul className='menu-item' variants={variants}>
-    <motion.li className='menu-item' variants={childVariants}>
-      <a href='#home'>Menu Item 1</a>
-    </motion.li>
-    <motion.li className='menu-item' variants={childVariants}>
-      <a href='#home'>Menu Item 2</a>
+    <motion.li variants={childVariants}>
+      <a style={{ right: 125 }} href='#home'>
+        Current Projects
+      </a>
     </motion.li>
   </motion.ul>
 );

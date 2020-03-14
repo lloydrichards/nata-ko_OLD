@@ -13,7 +13,7 @@ const Path = props => (
 
 export const AboutToggle = ({ toggle }) => (
   <button className='About' onClick={toggle}>
-    <svg width='23' height='23' viewBox='0 0 23 23'>
+    <svg className='about-cross' width='23' height='23' viewBox='0 0 23 23'>
       <Path
         variants={{
           closed: { d: 'M 10 3 L 10 18' },

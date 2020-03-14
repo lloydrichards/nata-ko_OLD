@@ -3,9 +3,11 @@ import { motion } from 'framer-motion';
 
 const variants = {
   open: {
+    zIndex: 3,
     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
   },
   closed: {
+    zIndex: -1,
     transition: { staggerChildren: 0.05, staggerDirection: -1 }
   }
 };
@@ -28,7 +30,7 @@ const childVariants = {
 };
 
 export const About = () => (
-  <motion.ul variants={variants}>
+  <motion.ul className='about-panel' variants={variants}>
     <motion.li variants={childVariants}>
       <div className='text-placeholder'>
         <p>

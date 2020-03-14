@@ -63,7 +63,7 @@ export const TopNav = () => {
     <div className='nav'>
       <ul style={{ width: '100%' }}>
         <li className='logo' style={{ float: 'left' }}>
-          <h2>Natalia Kobylinska</h2>
+          <h2 style={{ textAlign: 'center' }}>Natalia Kobylinska</h2>
         </li>
         <li style={{ float: 'right' }}>
           <motion.div
