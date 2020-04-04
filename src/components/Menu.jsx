@@ -32,11 +32,9 @@ const childVariants = {
 export const Menu = () => (
   <motion.ul className='menu-item' variants={variants}>
     <motion.li variants={childVariants}>
-      <a style={{ right: 125 }} href='#home'>
+      <a style={{ right: 125, color: "blue" }} href='/current'>
         Current Projects
       </a>
     </motion.li>
   </motion.ul>
 );
-
-const itemIds = [0, 1];

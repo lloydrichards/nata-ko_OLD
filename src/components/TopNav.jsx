@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useRef } from 'react';
 import { motion, useCycle } from 'framer-motion';
+import { css } from '@emotion/core';
 
 //Load Components
 import { useDimensions } from './use-dimensions';
@@ -61,11 +62,31 @@ export const TopNav = () => {
 
   return (
     <div className='nav'>
-      <ul style={{ width: '100%' }}>
-        <li className='logo' style={{ float: 'left' }}>
-          <h2 style={{ textAlign: 'center' }}>Natalia Kobylinska</h2>
+      <ul style={{ display: 'inline', width: '100%', textAlign: 'center' }}>
+        <li
+          className='logo'
+          style={{
+            margin: '15px 0px 0px 5vw',
+            float: 'left',
+            alignItems: 'center'
+          }}
+        >
+          <a
+            style={{
+              display: 'block',
+              color: 'black',
+              textAlign: 'center',
+              fontSize: '1.5rem',
+              padding: '14px 16px',
+              textDecoration: 'none',
+              textAlign: 'center'
+            }}
+            href='/'
+          >
+            Natalia Kobylinska
+          </a>
         </li>
-        <li style={{ float: 'right' }}>
+        <li style={{ margin: '15px 110px 0px 0px', float: 'right' }}>
           <motion.div
             className='nav-button'
             initial={false}

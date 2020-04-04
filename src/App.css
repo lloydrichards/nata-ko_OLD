@@ -176,7 +176,6 @@ li {
   display: inline;
   list-style-type: none;
   background: #fefefe;
-  width: 100%;
   padding: 0;
 }
 
@@ -228,9 +227,10 @@ li {
 }
 
 #cf img {
+  display: block;
   position: absolute;
   width: 100%;
-  left: 0;
+  margin: 0 auto;
   -webkit-animation-name: cfFadeInOut;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
@@ -299,4 +299,11 @@ Percentage for keyframes:
 }
 #cf img:nth-of-type(4) {
   animation-delay: 0s;
+}
+
+@media only screen and (max-width: 900px) {
+  #cf img {
+    width: auto;
+    height: 100%;
+  }
 }
