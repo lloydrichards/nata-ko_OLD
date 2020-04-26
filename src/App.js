@@ -4,7 +4,7 @@ import './App.css';
 
 import TopNav from './components/TopNav';
 import Gallery from './components/Gallery';
-import Current from './components/Current'
+import Current from './components/Current';
 import BottomNav from './components/BottomNav';
 
 function App() {
@@ -12,14 +12,8 @@ function App() {
     <Router>
       <div className='App'>
         <TopNav />
-        <Switch>
-          <Route path='/current'>
-            <Current />
-          </Route>
-          <Route path='/'>
-            <Gallery />
-          </Route>
-        </Switch>
+        <Route path='/current' component={Current} />
+        <Route exact path='/' component={Gallery} />
 
         <BottomNav />
       </div>
