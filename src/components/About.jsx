@@ -46,7 +46,7 @@ export const About = () => (
       whileTap={{ scale: 0.95 }}
     >
       <div className='text-placeholder-link'>
-        <a href='mailto: hello@nata-ko.com'>hello@nata-ko.com</a>
+        <a href='mailto: natkobylinska@gmail.com'>natkobylinska@gmail.com</a>
       </div>
     </motion.li>
   </motion.ul>
